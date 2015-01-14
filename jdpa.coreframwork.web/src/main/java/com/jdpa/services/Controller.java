@@ -36,7 +36,7 @@ public class Controller
 	DBUtilities objectOfDBUtilities = new DBUtilities();
 		
 	
-	@Test(priority=1)
+	@BeforeTest
 	public void init()throws IOException, ParseException
 	{
 		driver = DriverHandler.getDriver();
@@ -48,7 +48,7 @@ public class Controller
 		questionObject = objectOfDBUtilities.fetchJSONObject("QuestionData");
 	}
 	
-	@Test(priority=2)
+	@Test
 	public void firstTest() 
 	{	
 		ArrayList arraylistObject = objectOfDataConversion.sortJsonAsPerKey(travesalObject);
