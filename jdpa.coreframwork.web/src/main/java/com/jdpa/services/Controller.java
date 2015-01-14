@@ -97,14 +97,10 @@ public class Controller
 					objpagelocator.clickOnNext(driver);
 					
 				}
-				else if(inputType.equals("text"))
+				/*else
 				{
-					System.out.println("in else part inputType -:"+inputType);
-				}
-				else
-				{
-					objpagelocator.clickOnNext(driver);
-				}
+				objpagelocator.clickOnNext(driver);
+				}*/
 			}
 			else
 			{
@@ -115,7 +111,7 @@ public class Controller
 		else
 		{	
 			System.out.println("Terminate ...!!!!!!!!!!!!!!");
-			driver.quit();
+			//driver.quit();
 		}
 	}
 	

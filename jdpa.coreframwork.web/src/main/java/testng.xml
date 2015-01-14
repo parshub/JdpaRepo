@@ -2,15 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestSuite" thread-count="2"  parallel="tests">
  <test name="Test FF">
-  <parameter name="BROWSER" value="FF"></parameter>
-    <classes>
+   <classes>
       <class name="com.jdpa.services.Controller"></class>
     </classes>
   </test>     
- <test name="Test CH">
-  <parameter name="BROWSER" value="CH"></parameter>
-    <classes>
-      <class name="com.jdpa.services.Controller"></class>
-    </classes>
- </test>
+ 
  </suite> 
