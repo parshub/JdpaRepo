@@ -1,0 +1,24 @@
+{
+  "Q1" :{
+        "Response" : ["Floor Planning","Non-Prime Retail Credit"],
+        "next"     : ["Q2"]
+        },
+        
+  "Q2" :{
+  		"Response" : ["General Manager/President/VP"],
+        "next"     : ["Q3"]
+  		},
+  		
+  "Q3" :{
+  		"Response" : ["Volvo Car Financial Services","US Bank","Westlake Financial","USAA"],
+        "next"     : ["Q4"]
+  		},
+  "Q4" :{
+  		"Response" : ["Volvo Car Financial Services","US Bank","Westlake Financial","USAA"],
+  		"next"     : ["Q5"]
+  		},
+  "Q5" :{
+  		"Response" : ["20","20","20","20" ,"20"],
+  		"next"     : ["Q6"]
+  		}
+}

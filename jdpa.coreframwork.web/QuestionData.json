@@ -1,0 +1,47 @@
+{
+  "Q1" : {
+  			"Question" : "Please select the finance areas for which you will provide feedback. You do not have to complete each section, only the sections you can answer. You will then have the opportunity to forward the remaining sections to others in your dealership:We recommend that you forward sections of the survey to the individual(s) in the dealership that has (have) the most day-to-day knowledge and experience in working with the lenders. Mark all that apply.",
+         	"1" : {"value" :"Prime Retail Credit" ,"input":"checkbox"},
+        	"2" : {"value" :"Non-Prime Retail Credit" ,"input":"checkbox"},
+    		"3" : {"value" :"Retail Lease" ,"input":"checkbox"},
+    		"4" : {"value" :"Floor Planning" ,"input":"checkbox"},
+    		"5" : {"value" :"None" ,"input":"checkbox"}
+  		},
+  		
+  "Q2" : {
+  			"Question" : "What is the title of the individual who is completing this prime retail credit section of the survey?",
+  			"1" : {"value" :"Owner/Partner/Dealer Principal" ,"input":"radio"},
+        	"2" : {"value" :"Finance/Business Manager" ,"input":"radio"},
+    		"3" : {"value" :"General Manager/President/VP" ,"input":"radio"},
+    		"4" : {"value" :"Controller/Office Manager" ,"input":"radio"},
+    		"5" : {"value" :"Chief Executive Officer" ,"input":"radio"},
+    		"6" : {"value" :"Special Finance Manager" ,"input":"radio"},
+    		"7" : {"value" :"Other" ,"input":"radio"}
+   		} ,
+  		
+  "Q3" : {
+  			"Question" : "Please select up to four finance providers you use the most for Prime Retail Credit (typically grades A or B paper or FICO scores of 660 or higher).",
+  			"1" : {"value" :"Volvo Car Financial Services" ,"input":"checkbox"},
+        	"2" : {"value" :"US Bank" ,"input":"checkbox"},
+    		"3" : {"value" :"Westlake Financial" ,"input":"checkbox"},
+    		"4" : {"value" :"USAA" ,"input":"checkbox"}
+   		},
+   
+  "Q4" : {
+  			"Question" : "Please select up to four finance providers you use the most for Prime Retail Credit (typically grades A or B paper or FICO scores of 660 or higher).",
+  			"1" : {"value" :"Volvo Car Financial Services" ,"input":""},
+        	"2" : {"value" :"US Bank" ,"input":""},
+    		"3" : {"value" :"Westlake Financial" ,"input":""},
+    		"4" : {"value" :"USAA" ,"input":""}
+  		},
+  		
+  "Q5" : {
+  			"Question":"What percentage of your new and used retail contract volume goes to each provider?",
+  			"1" : {"value" :"US Bank" ,"input":"text"}, 
+  		   	"2" : {"value" :"USAA" ,"input":"text"}, 
+        	"3" : {"value" :"Volvo Car Financial Services" ,"input":"text"}, 
+    		"4" : {"value" :"Westlake Financial" ,"input":"text"},
+    		"5" : {"value" :"All other providers" ,"input":"text"}
+  		}
+   		
+}

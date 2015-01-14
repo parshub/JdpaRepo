@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [TestSuite]" parallel="tests">
+  <parameter name="BROWSER" value="CH"/>
+  <test name="Test FF(failed)" parallel="tests">
+    <parameter name="BROWSER" value="FF"/>
+    <classes>
+      <class name="com.jdpa.services.Entry">
+        <methods>
+          <include name="init"/>
+          <include name="firstTest"/>
+          <include name="testread"/>
+          <include name="testread"/>
+        </methods>
+      </class> <!-- com.jdpa.services.Entry -->
+    </classes>
+  </test> <!-- Test FF(failed) -->
+  <test name="Test CH(failed)" parallel="tests">
+    <parameter name="BROWSER" value="CH"/>
+    <classes>
+      <class name="com.jdpa.services.Entry">
+        <methods>
+          <include name="firstTest"/>
+          <include name="testread"/>
+          <include name="testread"/>
+        </methods>
+      </class> <!-- com.jdpa.services.Entry -->
+    </classes>
+  </test> <!-- Test CH(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

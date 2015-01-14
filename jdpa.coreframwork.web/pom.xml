@@ -1,0 +1,189 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.jdpa.surveyautomation</groupId>
+  <artifactId>jdpa.coreframwork.web</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+	<name>testProj</name>
+	<url>http://maven.apache.org</url>
+
+<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+
+
+		<org.slf4j.version>1.7.9</org.slf4j.version>
+		<log4j.version>1.2.17</log4j.version>
+
+		<junit.version>4.12</junit.version>
+		<testng.version>6.8.13</testng.version>
+		<jackson.version>1.9.13</jackson.version>
+		<json.version>1.1.1</json.version>
+		<commons-lang.version>2.6</commons-lang.version>
+		<commons-configuration.version>1.10</commons-configuration.version>
+
+		<selendroid-standalone.version>0.12.0</selendroid-standalone.version>
+		<selenium-iphone-driver.version>2.39.0</selenium-iphone-driver.version>
+
+		<selenium-java.version>2.43.0</selenium-java.version>
+	 	<selenium-firefox-driver.version>2.44.0</selenium-firefox-driver.version> 
+		<selenium-chrome-driver.version>2.44.0</selenium-chrome-driver.version>
+		<selenium-ie-driver.version>2.44.0</selenium-ie-driver.version>
+		<selenium-safari-driver.version>2.44.0</selenium-safari-driver.version>
+		<selenium-server.version>2.43.0</selenium-server.version>
+
+
+	</properties>
+
+	<dependencies>
+
+		<!-- Testing dependencies -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+		</dependency>
+
+		<!-- Jackson JSON Mapper -->
+
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>${json.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20090211</version>
+		</dependency>
+
+		<!-- Logging dependencies -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-ext</artifactId>
+			<version>${org.slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${org.slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${org.slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${org.slf4j.version}</version>
+		</dependency>
+
+		<!--Selenium Server dependencies -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>${selenium-server.version}</version>
+		</dependency>
+<!-- 
+		<dependency>
+			<groupId>io.selendroid</groupId>
+			<artifactId>selendroid-standalone</artifactId>
+			<version>${selendroid-standalone.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.selendroid</groupId>
+			<artifactId>selendroid-client</artifactId>
+			<version>${selendroid-standalone.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-iphone-driver</artifactId>
+			<version>${selenium-iphone-driver.version}</version>
+		</dependency> -->
+
+		<!-- Selenium Java dependency -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium-java.version}</version>
+		</dependency>
+
+		<!-- Selenium Browser dependencies -->
+	
+<!-- 		 <dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+			<version>${selenium-firefox-driver.version}</version>
+		</dependency> -->
+		
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>${selenium-chrome-driver.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-ie-driver</artifactId>
+			<version>${selenium-ie-driver.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-safari-driver</artifactId>
+			<version>${selenium-ie-driver.version}</version>
+		</dependency>
+
+		
+		<!--Mongo DB   -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>2.12.4</version>
+		</dependency>
+
+		<!-- commons dependencies -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>${commons-lang.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>${commons-configuration.version}</version>
+		</dependency>
+
+
+
+	</dependencies>
+
+
+
+
+</project>

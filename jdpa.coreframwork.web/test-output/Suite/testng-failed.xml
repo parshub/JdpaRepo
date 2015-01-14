@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="BROWSER" value="CH"/>
+  <test name="Test CH(failed)" parallel="tests">
+    <parameter name="BROWSER" value="CH"/>
+    <classes>
+      <class name="com.jdpa.services.Entry">
+        <methods>
+          <include name="init"/>
+          <include name="firstTest"/>
+          <include name="testread"/>
+          <include name="testread"/>
+        </methods>
+      </class> <!-- com.jdpa.services.Entry -->
+    </classes>
+  </test> <!-- Test CH(failed) -->
+</suite> <!-- Failed suite [Suite] -->
