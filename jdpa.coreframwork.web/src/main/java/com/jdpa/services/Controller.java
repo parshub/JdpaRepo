@@ -89,21 +89,13 @@ public class Controller
 				String inputType = listOfinputType.get(0);
 				if(inputType.equals("radio") || inputType.equals("checkbox"))
 				{
-					if(listOfoptionValue.size() == 1)
+					for (Iterator iterator = listOfoptionValue.iterator(); iterator.hasNext();)
 					{
-						optionValue = listOfoptionValue.get(0);
+						optionValue = (String ) iterator.next();
 						objpagelocator.getCheckBoxOrRadioButtonOnPage(driver, optionValue);
-						objpagelocator.clickOnNext(driver);
 					}
-					else 
-					{
-						for (Iterator iterator = listOfoptionValue.iterator(); iterator.hasNext();)
-						{
-							optionValue = (String ) iterator.next();
-							objpagelocator.getCheckBoxOrRadioButtonOnPage(driver, optionValue);
-						}
-						objpagelocator.clickOnNext(driver);
-					}
+					objpagelocator.clickOnNext(driver);
+					
 				}
 				else if(inputType.equals("text"))
 				{

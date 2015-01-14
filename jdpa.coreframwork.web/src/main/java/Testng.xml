@@ -4,13 +4,13 @@
  <test name="Test FF">
   <parameter name="BROWSER" value="FF"></parameter>
     <classes>
-      <class name="com.jdpa.services.Entry"></class>
+      <class name="com.jdpa.services.Controller"></class>
     </classes>
   </test>     
  <test name="Test CH">
   <parameter name="BROWSER" value="CH"></parameter>
     <classes>
-      <class name="com.jdpa.services.Entry"></class>
+      <class name="com.jdpa.services.Controller"></class>
     </classes>
  </test>
  </suite> 
