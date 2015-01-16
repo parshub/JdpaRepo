@@ -25,23 +25,5 @@
         	"2" : {"value" :"US Bank" ,"input":"checkbox"},
     		"3" : {"value" :"Westlake Financial" ,"input":"checkbox"},
     		"4" : {"value" :"USAA" ,"input":"checkbox"}
-   		},
-   
-  "Q4" : {
-  			"Question" : "Please select up to four finance providers you use the most for Prime Retail Credit (typically grades A or B paper or FICO scores of 660 or higher).",
-  			"1" : {"value" :"Volvo Car Financial Services" ,"input":""},
-        	"2" : {"value" :"US Bank" ,"input":""},
-    		"3" : {"value" :"Westlake Financial" ,"input":""},
-    		"4" : {"value" :"USAA" ,"input":""}
-  		},
-  		
-  "Q5" : {
-  			"Question":"What percentage of your new and used retail contract volume goes to each provider?",
-  			"1" : {"value" :"US Bank" ,"input":"text"}, 
-  		   	"2" : {"value" :"USAA" ,"input":"text"}, 
-        	"3" : {"value" :"Volvo Car Financial Services" ,"input":"text"}, 
-    		"4" : {"value" :"Westlake Financial" ,"input":"text"},
-    		"5" : {"value" :"All other providers" ,"input":"text"}
-  		}
-   		
+   		}
 }

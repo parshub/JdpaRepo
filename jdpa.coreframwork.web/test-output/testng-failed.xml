@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="2" name="Failed suite [TestSuite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.jdpa.reports.CustomListener"/>
+  </listeners>
+  <test name="Test FF(failed)" parallel="tests">
     <classes>
       <class name="com.jdpa.services.Controller">
         <methods>
           <include name="firstTest"/>
-          <include name="init"/>
         </methods>
       </class> <!-- com.jdpa.services.Controller -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test FF(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

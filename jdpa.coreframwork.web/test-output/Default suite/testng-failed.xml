@@ -5,8 +5,8 @@
     <classes>
       <class name="com.jdpa.services.Controller">
         <methods>
+          <include name="onTestFailure"/>
           <include name="firstTest"/>
-          <include name="init"/>
         </methods>
       </class> <!-- com.jdpa.services.Controller -->
     </classes>

@@ -9,17 +9,13 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver; 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.jdpa.scripts.DriverHandler;
 import com.jdpa.utilities.DBUtilities;
 import com.jdpa.utilities.PageLocators;
 
-public class Controller 
+public class Controller
 {	
 	static WebDriver driver;
 	static JsonServices jsonServiceObject = new JsonServices();
@@ -36,19 +32,19 @@ public class Controller
 	DBUtilities objectOfDBUtilities = new DBUtilities();
 		
 	
-	@BeforeTest
+	@Test(priority=1)
 	public void init()throws IOException, ParseException
 	{
 		driver = DriverHandler.getDriver();
 		driver.get("http://scripting.jdpoweronline.com/mrIWeb/mrIWeb.dll?I.Project=T1_QTYPE&i.test=1");
 		driver.findElement(By.cssSelector("input.mrNext")).click();
-		//travesalObject = jsonServiceObject.convertFileObjTOJsonObj("TraversalPath.json");
-		//questionObject = jsonServiceObject.convertFileObjTOJsonObj("QuestionData.json");
-		travesalObject = objectOfDBUtilities.fetchJSONObject("TraversalPath");
-		questionObject = objectOfDBUtilities.fetchJSONObject("QuestionData");
+		travesalObject = jsonServiceObject.convertFileObjTOJsonObj("TraversalPath.json");
+		questionObject = jsonServiceObject.convertFileObjTOJsonObj("QuestionData.json");
+		//travesalObject = objectOfDBUtilities.fetchJSONObject("TraversalPath");
+		//questionObject = objectOfDBUtilities.fetchJSONObject("QuestionData");
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void firstTest() 
 	{	
 		ArrayList arraylistObject = objectOfDataConversion.sortJsonAsPerKey(travesalObject);
@@ -67,9 +63,7 @@ public class Controller
 		}
 	}
 	
-	
-	
-	
+		
 	public void testRunninghelper(JSONObject travesalObject , JSONObject questionObject , String key )
 	{
 		visitedList.add(key);
@@ -95,12 +89,7 @@ public class Controller
 						objpagelocator.getCheckBoxOrRadioButtonOnPage(driver, optionValue);
 					}
 					objpagelocator.clickOnNext(driver);
-					
 				}
-				/*else
-				{
-				objpagelocator.clickOnNext(driver);
-				}*/
 			}
 			else
 			{
@@ -114,6 +103,7 @@ public class Controller
 			//driver.quit();
 		}
 	}
+	
 	
 }
 

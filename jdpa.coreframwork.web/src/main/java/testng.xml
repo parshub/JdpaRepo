@@ -6,5 +6,7 @@
       <class name="com.jdpa.services.Controller"></class>
     </classes>
   </test>     
- 
+ <listeners>
+ 	<listener class-name="com.jdpa.reports.CustomListener"></listener>
+ </listeners>
  </suite> 
