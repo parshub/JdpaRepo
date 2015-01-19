@@ -14,7 +14,6 @@ public class Validator
 		String jQuery = "return $(\"span:contains('"+questionText+"')\").after($('script')).text()";
 		jse = (JavascriptExecutor)driver;
 		String elementLocator=jse.executeScript(jQuery).toString();
-		
 		if(questionText.equals(elementLocator))
 		{
 			flag = true;

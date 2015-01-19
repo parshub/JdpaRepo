@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 
 public class PageLocators 
 {
@@ -17,11 +18,16 @@ public class PageLocators
 		jse=(JavascriptExecutor)driver;
 		WebElement elementLocator=(WebElement)jse.executeScript(jQuery);
 		elementLocator.click();
+		//Reporter.log(locatorText+" passed");
 	}
 	
 	public void clickOnNext(WebDriver driver)
 	{
+		//Reporter.log(locatorText+" >> passed");
 		driver.findElement(By.cssSelector("input.mrNext")).click();
+		
 	}
+	
+	
 }
 
