@@ -1,0 +1,32 @@
+[
+	{
+		"Expected ":"Verified",
+		"listResponce":["Floor Planning","Non-Prime Retail Credit"],
+		"testSurveyName ":"TraversalPath.json",
+		"Actual ":"Verified",
+		"Status ":"Passed",
+		"testStep ":"firstTest",
+		"surveyTrackTest ":"Passed",
+		"Questio ID ":"Q1"
+	},
+	{
+		"Expected ":"Verified",
+		"listResponce":["General Manager\/President\/VP"],
+		"testSurveyName ":"TraversalPath.json",
+		"Actual ":"Verified",
+		"Status ":"Passed",
+		"testStep ":"firstTest",
+		"surveyTrackTest ":"Passed",
+		"Questio ID ":"Q2"
+	},
+	{
+		"Expected ":"Verified",
+		"listResponce":["Volvo Car Financial Services","US Bank","Westlake Financial","USAA"],
+		"testSurveyName ":"TraversalPath.json",
+		"Actual ":"Verified",
+		"Status ":"Passed",
+		"testStep ":"firstTest",
+		"surveyTrackTest ":"Passed",
+		"Questio ID ":"Q3"
+		}
+]
